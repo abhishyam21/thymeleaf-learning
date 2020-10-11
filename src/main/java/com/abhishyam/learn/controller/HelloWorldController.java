@@ -16,4 +16,9 @@ public class HelloWorldController {
         model.addAttribute("message", "Hello World");
         return "helloworld";
     }
+
+    @GetMapping("/style")
+    public String style(){
+        return "add-css-js-demo";
+    }
 }
